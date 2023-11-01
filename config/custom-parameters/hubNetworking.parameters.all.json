@@ -73,7 +73,7 @@
       "value": false
     },
     "parDdosPlanName": {
-      "value": ""
+      "value": "alz-ddos"
     },
     "parAzFirewallEnabled": {
       "value": true
