@@ -355,7 +355,6 @@ resource resHubVnet 'Microsoft.Network/virtualNetworks@2023-02-01' = {
       dnsServers: parDnsServerIps
     }
     subnets: varSubnetProperties
-    enableDdosProtection: false
   }
 }
 
@@ -817,6 +816,5 @@ output outAzFirewallName string = parAzFirewallEnabled ? parAzFirewallName : ''
 output outPrivateDnsZones array = (parPrivateDnsZonesEnabled ? modPrivateDnsZones.outputs.outPrivateDnsZones : [])
 output outPrivateDnsZonesNames array = (parPrivateDnsZonesEnabled ? modPrivateDnsZones.outputs.outPrivateDnsZonesNames : [])
 
-output outDdosPlanResourceId string = resDdosProtectionPlan.id
 output outHubVirtualNetworkName string = resHubVnet.name
 output outHubVirtualNetworkId string = resHubVnet.id
