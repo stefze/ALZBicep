@@ -191,10 +191,41 @@
     },
     "parVpnGatewayConfig": {
       "value": {
+        "name": "alz-Vpn-Gateway",
+        "gatewayType": "Vpn",
+        "sku": "VpnGw1",
+        "vpnType": "RouteBased",
+        "generation": "Generation1",
+        "enableBgp": false,
+        "activeActive": false,
+        "enableBgpRouteTranslationForNat": false,
+        "enableDnsForwarding": false,
+        "bgpPeeringAddress": "",
+        "bgpsettings": {
+          "asn": "65515",
+          "bgpPeeringAddress": "",
+          "peerWeight": "5"
+        },
+        "vpnClientConfiguration": {}
       }
     },
     "parExpressRouteGatewayConfig": {
       "value": {
+        "name": "alz-ExpressRoute-Gateway",
+        "gatewayType": "ExpressRoute",
+        "sku": "Standard",
+        "vpnType": "RouteBased",
+        "generation": "None",
+        "enableBgp": false,
+        "activeActive": false,
+        "enableBgpRouteTranslationForNat": false,
+        "enableDnsForwarding": false,
+        "bgpPeeringAddress": "",
+        "bgpsettings": {
+          "asn": "65515",
+          "bgpPeeringAddress": "",
+          "peerWeight": "5"
+        }
       }
     },
     "parTags": {
