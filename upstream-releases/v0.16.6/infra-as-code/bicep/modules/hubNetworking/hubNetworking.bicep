@@ -77,7 +77,7 @@ param parAzBastionTunneling bool = false
 param parAzBastionNsgName string = 'nsg-AzureBastionSubnet'
 
 @sys.description('Switch to enable/disable DDoS Network Protection deployment.')
-param parDdosEnabled bool = false
+param parDdosEnabled bool = true
 
 @sys.description('DDoS Plan Name.')
 param parDdosPlanName string = '${parCompanyPrefix}-ddos-plan'
@@ -356,9 +356,6 @@ resource resHubVnet 'Microsoft.Network/virtualNetworks@2023-02-01' = {
     }
     subnets: varSubnetProperties
     enableDdosProtection: parDdosEnabled
-    ddosProtectionPlan: (parDdosEnabled) ? {
-      id: resDdosProtectionPlan.id
-    } : null
   }
 }
 
