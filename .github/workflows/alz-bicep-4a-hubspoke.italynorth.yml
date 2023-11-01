@@ -56,7 +56,7 @@ jobs:
         uses: azure/powershell@v1
         with:
           inlineScript: |
-            .\pipeline-scripts\Deploy-ALZConnectivityResourceGroup.ps1
+            .\pipeline-scripts\Deploy-ALZConnectivityResourceGroup-ItalyNorth.ps1
           azPSVersion: "latest"
 
       - name: "Hub (Hub-and-Spoke) Deployment"
