@@ -1,5 +1,4 @@
-name: ALZ-Bicep-4A-HubSpoke-ItalyNorth
-
+name: ALZ-Bicep-8-spoke-ItalyNorth
 on:
   push:
     branches:
@@ -21,7 +20,7 @@ permissions:
   pull-requests: write
 
 env:
-  ENV_FILE: ".envitalynorth"
+  ENV_FILE: ".env"
   IS_PULL_REQUEST: "${{ github.event_name == 'pull_request' }}"
 
 jobs:
@@ -56,12 +55,12 @@ jobs:
         uses: azure/powershell@v1
         with:
           inlineScript: |
-            .\pipeline-scripts\Deploy-ALZConnectivityResourceGroup-ItalyNorth.ps1
+            .\pipeline-scripts\Deploy-ALZConnectivityResourceGroup.ps1
           azPSVersion: "latest"
 
       - name: "Hub (Hub-and-Spoke) Deployment"
         uses: azure/powershell@v1
         with:
           inlineScript: |
-            .\pipeline-scripts\Deploy-ALZHub-HubAndSpoke-ItalyNorth.ps1
+            .\pipeline-scripts\Deploy-ALZHub-HubAndSpoke.ps1
           azPSVersion: "latest"

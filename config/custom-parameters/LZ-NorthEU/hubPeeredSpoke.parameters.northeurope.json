@@ -1,0 +1,71 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "parLocation": {
+      "value": "westeurope"
+    },
+    "parTopLevelManagementGroupPrefix": {
+      "value": "rrd"
+    },
+    "parTopLevelManagementGroupSuffix": {
+      "value": ""
+    },
+    "parPeeredVnetSubscriptionId": {
+      "value": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+    },
+    "parPeeredVnetSubscriptionMgPlacement": {
+      "value": "rrd-platform-connectivity"
+    },
+    "parDdosProtectionPlanId": {
+      "value": ""
+    },
+    "parSpokeNetworkName": {
+      "value": "vnet-spoke-northeurope"
+    },
+    "parSpokeNetworkAddressPrefix": {
+      "value": "10.202.0.0/24"
+    },
+    "parDnsServerIps": {
+      "value": []
+    },
+    "parPrivateDnsZoneResourceIds":{
+      "value": []
+    },
+    "parNextHopIpAddress": {
+      "value": "10.20.255.4"
+    },
+    "parDisableBgpRoutePropagation": {
+      "value": false
+    },
+    "parSpoketoHubRouteTableName": {
+      "value": "rtb-spoke-to-hub"
+    },
+    "parHubVirtualNetworkId": {
+      "value": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rrd-westeurope-hub-networking/providers/Microsoft.Network/virtualNetworks/rrd-hub-westeurope"
+    },
+    "parAllowSpokeForwardedTraffic": {
+      "value": false
+    },
+    "parAllowHubVPNGatewayTransit": {
+      "value": true
+    },
+    "parVirtualHubConnectionPrefix": {
+      "value": ""
+    },
+    "parVirtualHubConnectionSuffix": {
+      "value": "-vhc"
+    },
+    "parEnableInternetSecurity": {
+      "value": false
+    },
+    "parTags": {
+      "value": {
+        "Environment": "Live"
+      }
+    },
+    "parTelemetryOptOut": {
+      "value": false
+    }
+  }
+}

@@ -355,7 +355,7 @@ resource resHubVnet 'Microsoft.Network/virtualNetworks@2023-02-01' = {
       dnsServers: parDnsServerIps
     }
     subnets: varSubnetProperties
-    enableDdosProtection: parDdosEnabled
+    enableDdosProtection: false
   }
 }
 
