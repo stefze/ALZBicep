@@ -3,123 +3,20 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "parLocation": {
-      "value": "italynorth"
+      "value": "northeurope"
     },
     "parCompanyPrefix": {
       "value": "rrd"
     },
-    "parHubNetworkName": {
-      "value": "alz-hub-italynorth"
-    },
-    "parHubNetworkAddressPrefix": {
-      "value": "10.50.0.0/16"
-    },
-    "parSubnets": {
-      "value": [
-        {
-          "name": "AzureBastionSubnet",
-          "ipAddressRange": "10.50.0.0/24",
-          "networkSecurityGroupId": "",
-          "routeTableId": ""
-        },
-        {
-          "name": "GatewaySubnet",
-          "ipAddressRange": "10.50.254.0/24",
-          "networkSecurityGroupId": "",
-          "routeTableId": ""
-        },
-        {
-          "name": "AzureFirewallSubnet",
-          "ipAddressRange": "10.50.255.0/24",
-          "networkSecurityGroupId": "",
-          "routeTableId": ""
-        },
-        {
-          "name": "AzureFirewallManagementSubnet",
-          "ipAddressRange": "10.50.253.0/24",
-          "networkSecurityGroupId": "",
-          "routeTableId": ""
-        }
-      ]
-    },
-    "parDnsServerIps": {
-      "value": []
-    },
-    "parPublicIpSku": {
-      "value": "Standard"
-    },
-    "parPublicIpPrefix": {
-      "value": ""
-    },
-    "parPublicIpSuffix": {
-      "value": "-PublicIP"
-    },
-    "parAzBastionEnabled": {
-      "value": false
-    },
-    "parAzBastionName": {
-      "value": "alz-bastion"
-    },
-    "parAzBastionSku": {
-      "value": "Standard"
-    },
-    "parAzBastionTunneling": {
-      "value": false
-    },
-    "parAzBastionNsgName": {
-      "value": "nsg-AzureBastionSubnet"
-    },
-    "parDdosEnabled": {
-      "value": false
-    },
-    "parDdosPlanName": {
-      "value": "rrd-ddos"
-    },
-    "parAzFirewallEnabled": {
-      "value": true
-    },
-    "parAzFirewallName": {
-      "value": "alz-azfw-italynorth"
-    },
-    "parAzFirewallPoliciesName": {
-      "value": "alz-azfwpolicy-italynorth"
-    },
-    "parAzFirewallTier": {
-      "value": "Standard"
-    },
-    "parAzFirewallIntelMode": {
-      "value": "Alert"
-    },
-    "parAzFirewallAvailabilityZones": {
-      "value": []
-    },
-    "parAzErGatewayAvailabilityZones": {
-      "value": []
-    },
-    "parAzVpnGatewayAvailabilityZones": {
-      "value": []
-    },
-    "parAzFirewallDnsProxyEnabled": {
-      "value": true
-    },
-    "parAzFirewallDnsServers": {
-      "value": []
-    },
-    "parHubRouteTableName": {
-      "value": "alz-hub-routetable-italynorth"
-    },
-    "parDisableBgpRoutePropagation": {
-      "value": false
-    },
     "parPrivateDnsZonesEnabled": {
-      "value": false
+      "value": true
     },
     "parPrivateDnsZones": {
       "value": [
-        "privatelink.italynorth.azmk8s.io",
-        "privatelink.italynorth.batch.azure.com",
-        "privatelink.italynorth.kusto.windows.net",
-        "privatelink.italynorth.backup.windowsazure.com",
+        "privatelink.northeurope.azmk8s.io",
+        "privatelink.northeurope.batch.azure.com",
+        "privatelink.northeurope.kusto.windows.net",
+        "privatelink.northeurope.backup.windowsazure.com",
         "privatelink.adf.azure.com",
         "privatelink.afs.azure.net",
         "privatelink.agentsvc.azure-automation.net",
@@ -184,31 +81,6 @@
         "privatelink.vaultcore.azure.net",
         "privatelink.web.core.windows.net",
         "privatelink.webpubsub.azure.com"
-      ]
-    },
-    "parPrivateDnsZoneAutoMergeAzureBackupZone": {
-      "value": true
-    },
-    "parVpnGatewayConfig": {
-      "value": {
-      }
-    },
-    "parExpressRouteGatewayConfig": {
-      "value": {
-      }
-    },
-    "parTags": {
-      "value": {
-        "Environment": "canary"
-      }
-    },
-    "parTelemetryOptOut": {
-      "value": false
-    },
-    "parBastionOutboundSshRdpPorts": {
-      "value": [
-        "22",
-        "3389"
       ]
     }
   }
