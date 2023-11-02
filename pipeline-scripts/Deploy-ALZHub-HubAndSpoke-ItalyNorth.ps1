@@ -9,7 +9,7 @@ param (
   [String]$TemplateFile = "upstream-releases\$($env:UPSTREAM_RELEASE_VERSION)\infra-as-code\bicep\modules\hubNetworking\hubNetworking.bicep",
 
   [Parameter()]
-  [String]$TemplateParameterFile = "config\custom-parameters\hubNetworking.parameters.ItalyNorth.json",
+  [String]$TemplateParameterFile = "config\custom-parameters\hubNetworking.parameters.italynorth.json",
 
   [Parameter()]
   [Boolean]$WhatIfEnabled = [System.Convert]::ToBoolean($($env:IS_PULL_REQUEST))
