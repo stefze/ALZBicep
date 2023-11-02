@@ -147,7 +147,10 @@ param parDisableBgpRoutePropagation bool = false
 param parPrivateDnsZonesEnabled bool = true
 
 @sys.description('Resource Group Name for Private DNS Zones.')
-param parPrivateDnsZonesResourceGroup string = resourceGroup().name
+param parPrivateDnsZonesResourceGroup string = 'rg-rrd-privatednszones'
+
+@sys.description('Create Private DNS Zones Link.')
+param parPrivateDnsZoneslink bool = true
 
 @sys.description('Array of DNS Zones to provision in Hub Virtual Network. Default: All known Azure Private DNS Zones')
 param parPrivateDnsZones array = [
@@ -780,7 +783,7 @@ resource resHubRouteTable 'Microsoft.Network/routeTables@2023-02-01' = if (parAz
   }
 }
 
-module modPrivateDnsZones '../privateDnsZones/privateDnsZones.bicep' = if (parPrivateDnsZonesEnabled) {
+module modPrivateDnsZones '../privateDnsZones/privateDnsZones.bicep' = if (parPrivateDnsZoneslink) {
   name: 'deploy-Private-DNS-Zones'
   scope: resourceGroup(parPrivateDnsZonesResourceGroup)
   params: {
