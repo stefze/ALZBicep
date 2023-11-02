@@ -7,6 +7,7 @@ on:
     paths:
       - "config/custom-parameters/resourceGroupPrivateZones.parameters.all.json"
       - "config/custom-parameters/privatednszones.parameters.all.json"
+    pull_request:
     branches:
       - "main"
     paths:
