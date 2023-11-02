@@ -51,14 +51,14 @@ jobs:
           subscription-id: ${{ env.CONNECTIVITY_SUBSCRIPTION_ID }}
           enable-AzPSSession: true
 
-      - name: "Connectivity Resource Group Deployment"
+      - name: "Private DNS Zones Resource Group Deployment"
         uses: azure/powershell@v1
         with:
           inlineScript: |
             .\pipeline-scripts\Deploy-ALZPrivateZonesResourcegroup.ps1
           azPSVersion: "latest"
 
-      - name: "Hub (Hub-and-Spoke) Deployment"
+      - name: "Private Zones Deployment"
         uses: azure/powershell@v1
         with:
           inlineScript: |
