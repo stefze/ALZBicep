@@ -191,7 +191,6 @@
     },
     "parVpnGatewayConfig": {
       "value": {
-        "vpnClientConfiguration": {}
       }
     },
     "parExpressRouteGatewayConfig": {
