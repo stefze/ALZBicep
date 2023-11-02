@@ -9,7 +9,7 @@ param (
   [String]$TemplateFile = "upstream-releases\$($env:UPSTREAM_RELEASE_VERSION)\infra-as-code\bicep\modules\resourceGroup\resourceGroup.bicep",
 
   [Parameter()]
-  [String]$TemplateParameterFile = "config\custom-parameters\resourceGroupConnectivity.parameters.ItalyNorth.json",
+  [String]$TemplateParameterFile = "config\custom-parameters\resourceGroupConnectivity.parameters.ita.json",
 
   [Parameter()]
   [Boolean]$WhatIfEnabled = [System.Convert]::ToBoolean($($env:IS_PULL_REQUEST))
