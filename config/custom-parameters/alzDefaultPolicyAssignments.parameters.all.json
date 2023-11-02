@@ -33,7 +33,7 @@
       "value": "szeglio@gmail.com"
     },
     "parDdosProtectionPlanId": {
-      "value": "/subscriptions/3686962b-1994-4835-9482-60e8c828aa3c/resourceGroups/rg-rrd-connectivity/providers/Microsoft.Network/ddosProtectionPlans/alz-ddos-plan"
+      "value": ""
     },
     "parPrivateDnsResourceGroupId": {
       "value": "/subscriptions/3686962b-1994-4835-9482-60e8c828aa3c/resourceGroups/rg-rrd-connectivity"
