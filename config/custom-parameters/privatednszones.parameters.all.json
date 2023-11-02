@@ -5,9 +5,6 @@
     "parLocation": {
       "value": "northeurope"
     },
-    "parCompanyPrefix": {
-      "value": "rrd"
-    },
     "parPrivateDnsZonesEnabled": {
       "value": true
     },
