@@ -70,7 +70,7 @@
       "value": "nsg-AzureBastionSubnet"
     },
     "parDdosEnabled": {
-      "value": false
+      "value": true
     },
     "parDdosPlanName": {
       "value": "alz-ddos"
