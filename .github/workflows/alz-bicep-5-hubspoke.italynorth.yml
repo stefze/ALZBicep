@@ -5,14 +5,14 @@ on:
     branches:
       - "main"
     paths:
-      - "config/custom-parameters/resourceGroupConnectivity.parameters.italynorth.json"
-      - "config/custom-parameters/hubNetworking.parameters.all.json"
+      - "config/custom-parameters/resourceGroupConnectivity.parameters.ita.json"
+      - "config/custom-parameters/hubNetworking.parameters.ita.json"
   pull_request:
     branches:
       - "main"
     paths:
-      - "config/custom-parameters/resourceGroupConnectivity.parameters.italynorth.json"
-      - "config/custom-parameters/hubNetworking.parameters.italynorth.json"
+      - "config/custom-parameters/resourceGroupConnectivity.parameters.ita.json"
+      - "config/custom-parameters/hubNetworking.parameters.ita.json"
   workflow_dispatch:
 
 permissions:
