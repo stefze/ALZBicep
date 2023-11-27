@@ -39,12 +39,6 @@
           "ipAddressRange": "10.50.253.0/24",
           "networkSecurityGroupId": "",
           "routeTableId": ""
-        },
-        {
-          "name": "sb-dns",
-          "ipAddressRange": "10.50.251.0/24",
-          "networkSecurityGroupId": "",
-          "routeTableId": ""
         }
       ]
     },
@@ -61,7 +55,7 @@
       "value": "-PublicIP"
     },
     "parAzBastionEnabled": {
-      "value": true
+      "value": false
     },
     "parAzBastionName": {
       "value": "alz-bastion"
