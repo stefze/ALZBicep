@@ -39,6 +39,12 @@
           "ipAddressRange": "10.50.253.0/24",
           "networkSecurityGroupId": "",
           "routeTableId": ""
+        },
+        {
+          "name": "sb-pippo",
+          "ipAddressRange": "10.50.251.0/24",
+          "networkSecurityGroupId": "",
+          "routeTableId": ""
         }
       ]
     },
@@ -55,7 +61,7 @@
       "value": "-PublicIP"
     },
     "parAzBastionEnabled": {
-      "value": false
+      "value": true
     },
     "parAzBastionName": {
       "value": "alz-bastion"
